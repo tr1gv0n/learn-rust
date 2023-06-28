@@ -1,0 +1,26 @@
+[package]
+name = "kv"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bytes = "1.4.0"
+dashmap = "5.4.0"
+http = "0.2.9"
+prost = "0.9"
+sled = "0.34.7"
+thiserror = "1.0.40"
+tracing = "0.1.37"
+
+[dev-dependencies]
+anyhow = "1.0.71"
+async-prost = "0.3"
+futures = "0.3.28"
+tempfile = "3.6.0"
+tokio = { version = "1.29.0",features = ["rt", "rt-multi-thread", "io-util", "macros", "net" ]}
+tracing-subscriber = "0.3.17"
+
+[build-dependencies]
+prost-build = "0.9"
